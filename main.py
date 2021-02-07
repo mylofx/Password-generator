@@ -128,6 +128,9 @@ def menu():
     elif x == '2':
         while True:
             print_password()
+            if print_password() == None:
+                print('Nie masz żadnych zapisanych Haseł')
+                break
             print('1.Usuń hasło')
             print('0.Wyjscie')
             see_int = input()
